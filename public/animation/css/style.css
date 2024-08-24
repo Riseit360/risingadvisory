@@ -1,0 +1,135 @@
+/*-- Basic Css --*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+
+.animationsec {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index: 9999999;
+    pointer-events: none;
+}
+
+
+/*-- Rock Popup --*/
+
+.independenceday {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.independenceday::after {
+    content: '';
+    background-image: url('/Assets/animation/images/pop.gif');
+    background-repeat: repeat-x;
+    background-position: bottom, left;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -70px;
+}
+
+#confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+/*-- Plan withsound --*/
+
+.repblicday {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    pointer-events: none;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.repblicday canvas {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    z-index: 99;
+}
+
+.repblicday #chakraContainer {
+    width: 150px;
+    height: auto;
+    top: 45%;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    margin: 0px auto;
+    z-index: 1;
+    animation: 8s ease-out 0s infinite normal none running zoom-in-zoom-out;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1, 1);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+}
+
+#snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.snow img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh);
+        opacity: 0.3;
+    }
+}

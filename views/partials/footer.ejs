@@ -1,0 +1,238 @@
+<footer id="Contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="textrighsitefooter">
+                        <h3>Let’s connect</h3>
+                        <h3>Rising Advisory Services Private Limited</h3>
+                        <div class="sociicon">
+                            <ul>
+                                <li>
+                                    <a href="tel:+911169653958">
+                                        <span><i class="fa-solid fa-house"></i></span><b>+91 11 69653958</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:support@risingadvisory.com">
+                                        <span>
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </span><b>support@risingadvisory.com</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+911169653958">
+                                        <span><i class="fa-solid fa-phone"></i></span><b>
+                                            F-18, Local Shopping Complex, A Block
+                                            Naraina Vihar, Ring Road, New Delhi-110028, India
+                                        </b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 p-0">
+                    <div class="fromzon">
+                        <form method="post" action="/Home/SendMail" id="validationForm" onsubmit="return validate();">
+                            <div class="form-group">
+                                <lable>First Name</lable>
+                                <input type="text" class="form-control" name="uName" id="uName">
+                                <span id="nameError" style="color:red;font-size:13px;"></span>
+                            </div>
+                            <div class="form-group">
+                                <lable>Email Id</lable>
+                                <input type="email" class="form-control" name="ueMail" id="ueMail">
+                                <span id="emailError" style="color:red;font-size:13px;"></span>
+                            </div>
+                            <div class="form-group">
+                                <lable>Phone Number</lable>
+                                <input type="text" class="form-control mobile_codewith_flage" name="uPhoneNumber" id="uPhoneNumber">
+                                <span id="numberError" style="color:red;font-size:13px;"></span>
+                            </div>
+                            <div class="btnsection">
+                                <button type="submit" class="submit-btn" value="Submit" id="bottomfrom" name="bottomfrom" aria-label="bottomfrom" onclick="return validate();">
+                                    Submit
+                                </button>
+                            </div>
+                            <div class="loderarsecsec">
+                                <div class="Loader">
+                                    <div class="text">
+                                        <h6>Thank you for your details.</h6>
+                                        <h5>One of our consultants will connect with you shortly</h5>
+                                    </div>
+                                    <div class="loading"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="imgefotesec">
+                        <img src="/images/footer-contact.png" alt="Contact Us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Script File -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <!-- carousel -->
+    <script src="/js/owl.carousel.js"></script>
+    <!-- lAzay load -->
+    <script src="/js/jquery.lazyload.js"></script>
+    <!-- Other js -->
+    <script src="/js/main.js"></script>
+    <!-- Slider Code -->
+    <script src="/js/owl.slider.js"></script>
+   
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6THYCFFE2"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-X6THYCFFE2');
+    </script>
+
+    <script>
+        // Country Code Selection
+        $(function () {
+            var code = "+91";
+            $('.mobile_codewith_flage').intlTelInput({
+                autoHideDialCode: true,
+                autoPlaceholder: "ON",
+                formatOnDisplay: true,
+                hiddenInput: "full_number",
+                initialCountry: "in",
+                nationalMode: true,
+                placeholderNumberType: "MOBILE",
+                preferredCountries: ['US'],
+                separateDialCode: true
+            });
+
+            $('.mobile_codewith_flage').on("countrychange", function (e, countryData) {
+                var countryCode = countryData.dialCode;
+                $(this).val("+" + countryCode);
+                var digits = countryCodeToDigits[countryCode] || "Enter valid country code";
+                $(this).attr("placeholder", "Enter " + (Array.isArray(digits) ? digits.join(" to ") : digits) + " digits.");
+            });
+        });
+    </script>
+
+    <script>
+        const emailRegex = /^[\w-\.]+@@([\w-]+\.)+[\w-]{2,4}$/;
+
+        // Function to validate mobile number based on selected country code
+        function validateMobileNumber(registerMobile, countryCode) {
+            var pattern = new RegExp("^\\" + countryCode + "\\d{" + intlTelInputUtils.numberFormat[countryCode].nationalNumberPattern.replace(/\D/g, '').length + "}$");
+            return pattern.test(registerMobile);
+        }
+
+        document.addEventListener("keydown", function (event) {
+            if (event.target.tagName === "INPUT" && event.target.type === "text" && event.target.id === "uName") {
+                document.getElementById("nameError").style.display = "none";
+            }
+            if (event.target.tagName === "INPUT" && event.target.type === "email" && event.target.id === "ueMail") {
+                document.getElementById("emailError").style.display = "none";
+            }
+            if (event.target.tagName === "INPUT" && event.target.type === "text" && event.target.id === "uPhoneNumber") {
+                document.getElementById("numberError").style.display = "none";
+            }
+        });
+
+        function validateEmail(email) {
+            return emailRegex.test(String(email).toLowerCase());
+        }
+
+        function validate() {
+            var name = document.getElementById("uName").value;
+            var email = document.getElementById("ueMail").value;
+            var phoneNumber = document.getElementById("uPhoneNumber").value;
+            var countryCode = $('.mobile_codewith_flage').intlTelInput("getSelectedCountryData").dialCode;
+
+
+            if (name.trim() === '') {
+                document.getElementById("nameError").style.display = "block";
+                document.getElementById("nameError").innerText = 'Please Enter Your Name';
+                return false;
+            }
+
+            if (email.trim() === '') {
+                document.getElementById("emailError").style.display = "block";
+                document.getElementById("emailError").innerText = 'Please Enter Your Email';
+                return false;
+            }
+            if (!validateEmail(email)) {
+                document.getElementById("emailError").style.display = "block";
+                document.getElementById("emailError").innerText = 'Please Enter Valid Email';
+                return false;
+            }
+
+            if (phoneNumber.trim() === '') {
+                document.getElementById("numberError").style.display = "block";
+                document.getElementById("numberError").innerText = 'Please Enter Your Phone Number';
+                return false;
+            }
+            popup();
+            return true;
+        }
+        function popup() {
+            $(".loderarsecsec").css("display", "block");
+        }
+    </script>
+
+    <script>
+        startConfetti();
+    </script>
+
+
+ 
+
+<script>
+
+
+        const r =  window.location.href;
+
+	
+
+        const fragment = window.location.hash; 
+
+	
+
+
+	fetch('/handle-route', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ variable: fragment }) 
+        })
+        .then(response => response.text())
+        
+        .then(data => {  const parsedUrl = new URL(r); const host = parsedUrl.host;    
+
+         if(fragment.startsWith("#Contact")) {  if(fragment && fragment.startsWith('#Contact') && fragment.length > 8) { 
+
+window.location.href = 'http://' + host + '/' + '<%= cfoPageUrl %>';
+ 
+
+             
+}
+                         else {  }
+}
+    
+})
+
+        .catch(error => console.error('Error:', error));
+
+        
+    </script>
+        
+    

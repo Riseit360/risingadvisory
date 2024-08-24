@@ -1,0 +1,88 @@
+<%- include('../../partials/head'); %>
+<header>
+  <%- include('../../partials/header'); %>
+</header>
+
+<style>
+    .page_404 {
+        padding: 20px 0 0px;
+        background: #fff;
+        margin: 0 auto;
+        text-align: center;
+    }
+    h1 {
+        font-family: Poppins;
+        line-height: 40px;
+        color: rgb(24, 26, 42);
+    }
+    .four_zero_four_bg {
+        background: url(/images/gifsec.gif);
+        height: 450px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+    }
+
+        .four_zero_four_bg h1 {
+            font-size: 12rem;
+            font-weight: 800;
+            color: #000;
+            letter-spacing: 0.5px;
+            -webkit-text-fill-color: #008a322b;
+            -webkit-text-stroke: 4px rgb(0 138 50);
+            line-height: 12rem;
+        }
+
+    .contant_box_404 {
+        position: relative;
+        padding: 30px 50px;
+        background: #000000d9;
+        width: max-content;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+        .contant_box_404 h3 {
+            color: #fff;
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            margin: 0px 0px 8px;
+            font-family: Poppins;
+        }
+
+        .contant_box_404 p {
+            color: #fff;
+            font-size: 14px;
+            line-height: 25px;
+            margin: 0px 0px 30px;
+            padding: 0;
+            display: inline-block;
+            width: 100%;
+            font-family: Poppins;
+        }
+
+        .contant_box_404 a.link_404 {
+            border: 2px solid #fff;
+            padding: 5px 30px;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            display: inline-block;
+        }
+</style>
+<section class="page_404">
+    <div class="four_zero_four_bg">
+        <h1 class="text-center ">404</h1>
+        <div class="contant_box_404">
+            <h3 class="h2">Look like you're lost</h3>
+            <p>the page you are looking for not avaible!</p>
+            <a href="/" class="link_404">Go to Home</a>
+        </div>
+    </div>
+</section>
+<footer>
+  <%- include('../../partials/footer'); %>
+</footer>
+

@@ -1,0 +1,19 @@
+.bodymain {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+}

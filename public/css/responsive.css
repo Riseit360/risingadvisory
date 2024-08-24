@@ -1,0 +1,463 @@
+@media (max-width: 1400px) {
+    .servboxtab .tab-menu li:nth-child(even):after {
+        top: 19px;
+        right: -6px;
+    }
+
+    .servboxtab .tab-menu ul li:after {
+        right: -22px;
+        bottom: 34px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: calc(100% - 30px);
+    }
+
+    .slider .textzonares {
+        padding: 0px 10px 0px 0px;
+    }
+
+    .slider h3 {
+        font-size: 25px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .slider h4 {
+        font-size: 16px;
+        margin: 15px 0px 10px !important;
+    }
+
+    .slider ul {
+        margin-bottom: 10px;
+    }
+
+        .slider ul li a {
+            line-height: 25px;
+            font-size: 14px;
+        }
+
+    .slider {
+        padding: 40px 0px 0px;
+    }
+
+    .services {
+        padding: 30px 0px 0px;
+    }
+
+    .textarea ul li {
+        padding: 0px 0px 15px;
+        line-height: 25px;
+    }
+
+    .services h3 span {
+        width: max-content;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 25px;
+        font-family: syne, sans-serif;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        border-radius: 67px;
+        border: 3px solid rgb(247, 103, 31);
+        padding: 10px 50px;
+    }
+
+    .Slider_Main_Banner .titlesecae {
+        font-size: 35px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+    }
+
+    .services .row {
+        margin: 0px 0px 50px;
+    }
+
+    .textarea {
+        padding: 30px;
+        margin: 20px;
+        width: calc(100% - 30px);
+    }
+
+    footer .col-md-6.p-0 {
+        display: none;
+    }
+
+    footer .col-md-6 {
+        width: 100%;
+    }
+
+    footer .textrighsitefooter h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    footer .sociicon {
+        margin: 40px 0px 0px;
+    }
+
+    .imgboxsec {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+        .imgboxsec img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+    .servboxtab .tab-menu li:nth-child(even):after {
+        top: 27px;
+        right: -15px;
+    }
+
+    .servboxtab .tab-menu ul li:after {
+        right: -30px;
+        bottom: 38px;
+    }
+
+    .sertabconbox h2:after {
+        width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    .menufull {
+        display: none;
+    }
+
+    .menugrid {
+        position: relative;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        margin: 0px auto;
+        display: inline-block;
+        padding: 50px 30px;
+    }
+
+    .allmoblis {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .head {
+        padding: 5px 15px;
+    }
+
+    .toggle.on {
+        right: 0px;
+        height: 35px;
+        width: 35px;
+        position: relative;
+    }
+
+    .menufull .menugrid ul li a {
+        font-size: 20px;
+        padding: 0px 0px;
+        line-height: 50px;
+        width: 100%;
+    }
+
+    .head .menugrid ul {
+        width: 100%;
+    }
+
+    .socalmediaico {
+        position: relative;
+        right: 0;
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .menugrid .socalmediaico ul li a {
+        margin: 0px 2px;
+        padding: 0px 5px;
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .head .socalmediaico ul {
+        width: auto;
+        display: inline-block;
+    }
+
+    .container {
+        max-width: calc(100% - 70px);
+    }
+    /*-- slider --*/
+    .slider {
+        padding: 30px 0px 0px;
+    }
+
+        .slider .textzonares {
+            padding: 0px 0px 0px 0px;
+        }
+
+        .slider h3 {
+            font-size: 25px;
+            line-height: 25px;
+        }
+
+        .slider h4 {
+            font-size: 20px;
+            margin: 15px 0px 15px !important;
+        }
+
+        .slider ul {
+            margin-bottom: 20px;
+        }
+    /*-- Services --*/
+    .services .titlesecare {
+        font-size: 15px;
+        padding: 5px 15px;
+        line-height: 20px;
+        clip-path: polygon(0px 0px, 90% 0px, 100% 100%, 0% 100%);
+    }
+
+    .services .righttextare {
+        clip-path: polygon(6% 0px, 100% 0px, 100% 100%, 0% 100%);
+        text-align: right;
+    }
+
+    .textarea {
+        padding: 30px;
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+        .textarea ul li a {
+            font-size: 14px;
+            gap: 10px;
+            line-height: 25px;
+        }
+
+    .btnsecare {
+        margin: 10px auto 0px;
+        text-align: left;
+    }
+
+    .services .righttextare + .textarea + .btnsecare {
+        text-align: right;
+    }
+
+    .services .serrevert .row:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .services h3 span {
+        font-size: 18px;
+        padding: 5px 25px;
+    }
+
+    .services .row {
+        margin: 0px 0px 50px;
+    }
+
+    .serrevert .imgboxsec {
+        margin-bottom: 30px;
+    }
+    /*-- footer --*/
+    footer .textrighsitefooter {
+        width: calc(100% - 20px);
+        margin: 20px auto 0px;
+    }
+
+        footer .textrighsitefooter h3 {
+            font-size: 23px;
+            margin-bottom: 20px;
+            line-height: 35px;
+        }
+
+    footer .sociicon {
+        margin: 20px 0px 0px;
+    }
+
+        footer .sociicon ul a b {
+            width: calc(100% - 30px);
+        }
+
+        footer .sociicon ul span {
+            width: 30px;
+            height: 30px;
+            font-size: 10px;
+        }
+
+        footer .sociicon ul a {
+            gap: 10px;
+            font-size: 14px;
+        }
+
+    footer {
+        background: rgb(255, 197, 23);
+    }
+
+        footer .imgefotesec {
+            width: auto;
+            height: auto;
+            position: relative;
+            object-fit: contain;
+            object-position: center;
+            padding-right: 0px;
+            display: block;
+        }
+
+            footer .imgefotesec img {
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+            }
+
+        footer .sociicon li:last-child {
+            margin-bottom: 0;
+        }
+
+    body {
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    footer .col-md-6.p-0 {
+        display: block;
+    }
+
+    .toggle {
+        margin-top: 10px;
+    }
+
+    .slider .sliderbannersec {
+        margin-top: 30px;
+    }
+
+        .slider .sliderbannersec li a {
+            font-size: 28px;
+            line-height: 50px;
+        }
+
+    .slider .textzonares p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .box-sliderbtn {
+        position: absolute;
+        margin: 0 auto;
+        width: 35px;
+        height: 80px;
+        padding: 20px 10px;
+        right: 10px;
+        top: 60%;
+        z-index: 9;
+        display: block;
+    }
+
+        .box-sliderbtn span {
+            width: 8px;
+            height: 8px;
+        }
+
+    .menugrid .allmoblis ul:first-child {
+        display: none;
+    }
+
+    .bannerimg {
+        width: 100%;
+    }
+
+    .servicesbox h3 span {
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+
+    .servboxtab .tab-menu ul {
+        justify-content: center;
+    }
+
+    .servboxtab .sertabtn {
+        width: 80px;
+        height: 80px;
+        line-height: 15px;
+        font-size: 13px;
+    }
+
+    .servboxtab .tab-menu li:nth-child(odd) {
+        margin: 0px 10px;
+    }
+
+    .servboxtab .tab-menu li:nth-child(even) {
+        margin: 0px;
+    }
+
+    .servboxtab .tab-menu ul li:before,
+    .servboxtab .tab-menu ul li:after {
+        display: none;
+    }
+
+    .servboxtab {
+        padding: 0px 0px;
+    }
+
+        .servboxtab h3 {
+            margin: 0px 0px 30px;
+        }
+
+    .sertabconbox {
+        padding: 15px;
+    }
+
+        .sertabconbox h2 {
+            font-size: 17px;
+        }
+
+            .sertabconbox h2:after {
+                width: 110px;
+                top: 10px;
+            }
+
+    .virtcfoimg {
+        padding: 10px 0px;
+    }
+
+    .virtcfotext {
+        padding: 15px 0px 10px;
+    }
+
+    .fromzon {
+        top: 30px;
+        left: 30px;
+        border-radius: 4px;
+        padding: 30px;
+    }
+
+        .fromzon:before {
+            top: 0px;
+            border: 2px dashed #fff;
+            border-radius: 4px;
+            left: 0;
+            border-right: 2px dashed #fff;
+            border-right-color: #fff;
+        }
+    .festivelsection + header + .slider, .festivelsection + header + .slider {
+        padding-top: 120px;
+    }
+}
+
